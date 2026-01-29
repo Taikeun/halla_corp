@@ -13,7 +13,7 @@ export default function Footer() {
                         <div className="flex items-center gap-2">
                             <div className="relative w-8 h-8 bg-white rounded-sm overflow-hidden flex items-center justify-center">
                                 <Image
-                                    src="/images/halla_logo.jpg"
+                                    src="/halla_corp/images/halla_logo.jpg"
                                     alt="(주)한라"
                                     width={32}
                                     height={32}

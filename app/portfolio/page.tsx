@@ -11,7 +11,7 @@ export default function Portfolio() {
             <Header />
 
             <section className="bg-halla-navy py-24 px-6 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/images/pattern_grid.png')] opacity-10"></div>
+                <div className="absolute inset-0 bg-[url('/halla_corp/images/pattern_grid.png')] opacity-10"></div>
                 <div className="max-w-7xl mx-auto text-center relative z-10">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-up">Portfolio</h1>
                     <p className="text-slate-300 max-w-2xl mx-auto text-lg leading-relaxed animate-fade-in-up animation-delay-200">

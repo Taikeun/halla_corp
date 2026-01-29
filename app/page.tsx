@@ -26,7 +26,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero_bg_minimal.png"
+            src="/halla_corp/images/hero_bg_minimal.png"
             alt="Hero Background"
             fill
             className="object-cover opacity-60"

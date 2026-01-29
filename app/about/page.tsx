@@ -27,7 +27,7 @@ export default function About() {
                     </h2>
                     <div className="space-y-6 text-slate-600 leading-relaxed text-lg text-left bg-slate-50 p-8 md:p-12 rounded-sm border border-slate-100 shadow-sm">
                         <p>
-                            주식회사 한라는 2021년 <b>(주)케이엔에스피</b> 창립 이후, H/W 제작 전문업체로서 쌓아온 풍부한 경험과 기술 노하우를 바탕으로 성장해 왔습니다.
+                            주식회사 한라는 2021년 (주)케이엔에스피 창립 이후, H/W 제작 전문업체로서 쌓아온 풍부한 경험과 기술 노하우를 바탕으로 성장해 왔습니다.
                         </p>
                         <p>
                             특히 <b>P.C Anchor</b> 및 <b>ST’L Bracket</b> 제품 제작, <b>ST’L Curtain Wall</b> 임가공 분야에서 독보적인 전문성을 구축하며 고객사의 성공적인 프로젝트 수행에 기여해 왔습니다.
@@ -209,13 +209,13 @@ export default function About() {
 
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                         {[
-                            { title: "중소기업 확인서", image: "/images/certifications/sme_confirmation.jpg", desc: "중소벤처기업부 인증 강소기업" },
-                            { title: "공장등록증명서", image: "/images/certifications/factory_registration.jpg", desc: "체계적인 생산 설비 및 공장 등록 승인" },
-                            { title: "벤처기업 확인서", image: "/images/certifications/venture_cert.jpg", desc: "혁신성장유형 벤처기업 인증" },
-                            { title: "품질경영시스템", image: "/images/certifications/iso_9001.jpg", desc: "ISO 9001:2015 국제 품질 경영 인증" },
-                            { title: "환경경영시스템", image: "/images/certifications/iso_14001.jpg", desc: "ISO 14001:2015 국제 환경 경영 인증" },
-                            { title: "특허증", image: "/images/certifications/patent.png", desc: "가변지지구조를 갖는 계단용 핸드레일 제조장치" },
-                            { title: "연구개발전담부서 인정서", image: "/images/certifications/rnd_cert.jpg", desc: "과학기술정보통신부 인정 기업부설연구소" }
+                            { title: "중소기업 확인서", image: "/halla_corp/images/certifications/sme_confirmation.jpg", desc: "중소벤처기업부 인증 강소기업" },
+                            { title: "공장등록증명서", image: "/halla_corp/images/certifications/factory_registration.jpg", desc: "체계적인 생산 설비 및 공장 등록 승인" },
+                            { title: "벤처기업 확인서", image: "/halla_corp/images/certifications/venture_cert.jpg", desc: "혁신성장유형 벤처기업 인증" },
+                            { title: "품질경영시스템", image: "/halla_corp/images/certifications/iso_9001.jpg", desc: "ISO 9001:2015 국제 품질 경영 인증" },
+                            { title: "환경경영시스템", image: "/halla_corp/images/certifications/iso_14001.jpg", desc: "ISO 14001:2015 국제 환경 경영 인증" },
+                            { title: "특허증", image: "/halla_corp/images/certifications/patent.png", desc: "가변지지구조를 갖는 계단용 핸드레일 제조장치" },
+                            { title: "연구개발전담부서 인정서", image: "/halla_corp/images/certifications/rnd_cert.jpg", desc: "과학기술정보통신부 인정 기업부설연구소" }
                         ].map((item, idx) => (
                             <div key={idx} className="group">
                                 <div className="relative aspect-[1/1.4] bg-slate-100 border border-slate-200 overflow-hidden shadow-sm group-hover:shadow-md transition-shadow">

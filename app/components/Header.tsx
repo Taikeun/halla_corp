@@ -24,7 +24,7 @@ export default function Header() {
                 <Link href="/" className="flex items-center gap-2 group">
                     <div className="relative w-10 h-10 bg-white rounded-sm overflow-hidden flex items-center justify-center">
                         <Image
-                            src="/images/halla_logo.jpg"
+                            src="/halla_corp/images/halla_logo.jpg"
                             alt="(주)한라"
                             width={40}
                             height={40}

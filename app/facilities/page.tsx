@@ -6,41 +6,41 @@ export default function Facilities() {
     const facilities = [
         {
             name: "Shearing Machine (샤링기)",
-            images: ["/images/facilities/shearing_machine.png"],
+            images: ["/halla_corp/images/facilities/shearing_machine.png"],
             desc: "원자재(강판, 스테인리스 등)를 정해진 규격으로 신속하고 정확하게 단순 절단하는 초기 공정 설비입니다.",
             specs: ["AMADA Shear", "최대 절단 길이: 3000mm", "정밀 유압 제어"]
         },
         {
             name: "Press Line (프레스)",
-            images: ["/images/facilities/press_machine.png"],
+            images: ["/halla_corp/images/facilities/press_machine.png"],
             desc: "금형을 이용한 대량 생산 및 성형 가공에 최적화된 프레스 라인입니다. 타공, 포밍 등 다양한 가공이 가능합니다.",
             specs: ["Mechanical Press 3기", "75톤 / 50톤 라인업", "고속 연속 가공"]
         },
         {
             name: "Band Saw (Small)",
-            images: ["/images/facilities/bandsaw_small.png"],
+            images: ["/halla_corp/images/facilities/bandsaw_small.png"],
             desc: "파이프 및 형강류 절단에 특화된 소형 밴드쏘입니다. 각도 절단이 용이하여 다양한 프레임 제작에 활용됩니다.",
             specs: ["George 260", "가공 직경: Ø225mm", "각도 절단: 0~60도"]
         },
         {
             name: "Band Saw (Medium)",
-            images: ["/images/facilities/bandsaw_medium.jpg"],
+            images: ["/halla_corp/images/facilities/bandsaw_medium.jpg"],
             desc: "중형 구조물 및 자재 절단용 설비로, 안정적인 절삭 능력과 빠른 작업 속도를 자랑합니다.",
             specs: ["NC-600", "자동 이송 장치 탑재", "정밀 치수 제어"]
         },
         {
             name: "Band Saw (Large)",
-            images: ["/images/facilities/bandsaw_large.jpg"],
+            images: ["/halla_corp/images/facilities/bandsaw_large.jpg"],
             desc: "H빔, 각파이프 등 대형 구조물 및 후판 자재 절단이 가능한 대형 밴드쏘입니다. 고성능 톱날로 난삭재 가공도 가능합니다.",
             specs: ["High-speed Cutting", "대구경 파이프 절단", "강력한 모터 출력"]
         },
         {
             name: "Milling Machine (밀링기)",
             images: [
-                "/images/facilities/milling/milling_v2_1.png",
-                "/images/facilities/milling/milling_v2_2.jpg",
-                "/images/facilities/milling/milling_v2_3.jpg",
-                "/images/facilities/milling/milling_v2_4.jpg"
+                "/halla_corp/images/facilities/milling/milling_v2_1.png",
+                "/halla_corp/images/facilities/milling/milling_v2_2.jpg",
+                "/halla_corp/images/facilities/milling/milling_v2_3.jpg",
+                "/halla_corp/images/facilities/milling/milling_v2_4.jpg"
             ],
             desc: "다양한 형태의 부품 가공을 위한 고정밀 밀링 머신입니다. 평면 깎기, 홈 깎기 등 정교한 작업이 가능합니다.",
             specs: ["범용 밀링 / NC 밀링", "복잡한 형상 가공", "정밀 부품 제작"]
@@ -48,10 +48,10 @@ export default function Facilities() {
         {
             name: "Laser Welder (레이저 용접기)",
             images: [
-                "/images/facilities/laser_welder/laser_welder_1.png",
-                "/images/facilities/laser_welder/laser_welder_2.png",
-                "/images/facilities/laser_welder/laser_welder_3.png",
-                "/images/facilities/laser_welder/laser_welder_4.png"
+                "/halla_corp/images/facilities/laser_welder/laser_welder_1.png",
+                "/halla_corp/images/facilities/laser_welder/laser_welder_2.png",
+                "/halla_corp/images/facilities/laser_welder/laser_welder_3.png",
+                "/halla_corp/images/facilities/laser_welder/laser_welder_4.png"
             ],
             desc: "최첨단 레이저 용접 기술을 통해 열변형을 최소화하고 깊은 용입을 실현합니다. 정밀하고 강도 높은 접합이 가능합니다.",
             specs: ["ASEA Laser 2000W", "최소 열변형", "이종 금속 용접 가능"]

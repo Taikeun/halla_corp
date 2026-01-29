@@ -9,7 +9,7 @@ export const portfolioProjects = [
             location: "인천광역시 중구",
             period: "2021.03 ~ 2023.03"
         },
-        image: "/images/portfolio/e-yeonjong.jpg"
+        image: "/halla_corp/images/portfolio/e-yeonjong.jpg"
     },
     {
         title: "한국카본 마곡R&D센터 신축공사",
@@ -21,7 +21,7 @@ export const portfolioProjects = [
             location: "서울특별시 강서구",
             period: "2022.01 ~ 2023.03"
         },
-        image: "/images/portfolio/carbon_magok.jpg"
+        image: "/halla_corp/images/portfolio/carbon_magok.jpg"
     },
     {
         title: "e편한세상 서산 석림 더노블",
@@ -33,7 +33,7 @@ export const portfolioProjects = [
             location: "충청남도 서산",
             period: "2023.08 ~ 2023.12"
         },
-        image: "/images/portfolio/e-seosan.jpg"
+        image: "/halla_corp/images/portfolio/e-seosan.jpg"
     },
     {
         title: "더샵갤러리 2차 건축공사",
@@ -45,7 +45,7 @@ export const portfolioProjects = [
             location: "서울특별시 강남구",
             period: "2023.01 ~ 2023.03"
         },
-        image: "/images/portfolio/the_sharp_gallery.png"
+        image: "/halla_corp/images/portfolio/the_sharp_gallery.png"
     },
     {
         title: "주한 프랑스 대사관 신축 및 리모델링",
@@ -57,7 +57,7 @@ export const portfolioProjects = [
             location: "서울특별시 서대문구",
             period: "2022.03 ~ 2022.08"
         },
-        image: "/images/portfolio/french_embassy_v2.jpg"
+        image: "/halla_corp/images/portfolio/french_embassy_v2.jpg"
     },
     {
         title: "대통령실(용산환경개선)공사",
@@ -69,7 +69,7 @@ export const portfolioProjects = [
             location: "서울 용산",
             period: "2023.03 ~ 2023.05"
         },
-        image: "/images/portfolio/presidential_office.jpg"
+        image: "/halla_corp/images/portfolio/presidential_office.jpg"
     },
     {
         title: "고양 향동8BL지식산업센터 현장",
@@ -81,7 +81,7 @@ export const portfolioProjects = [
             location: "경기 고양",
             period: "2023.03 ~ 2024.03"
         },
-        image: "/images/portfolio/goyang_hyangdong.png"
+        image: "/halla_corp/images/portfolio/goyang_hyangdong.png"
     },
     {
         title: "아이아이컴바인드 성수동 신사옥 신축공사",
@@ -93,7 +93,7 @@ export const portfolioProjects = [
             location: "서울 성동구",
             period: "2022.04 ~ 2025.02"
         },
-        image: "/images/portfolio/ii_combined.jpg"
+        image: "/halla_corp/images/portfolio/ii_combined.jpg"
     },
     {
         title: "잭니클라우스CC 클럽하우스 본관ㆍ별관 리모델링공사",
@@ -105,7 +105,7 @@ export const portfolioProjects = [
             location: "인천 연수구",
             period: "2022.12 ~ 2023.02"
         },
-        image: "/images/portfolio/jack_nicklaus_clubhouse.jpg"
+        image: "/halla_corp/images/portfolio/jack_nicklaus_clubhouse.jpg"
     },
     {
         title: "잭니클라우스 골프빌라 신축공사",
@@ -117,7 +117,7 @@ export const portfolioProjects = [
             location: "인천 연수구",
             period: "2023.03 ~ 2023.09"
         },
-        image: "/images/portfolio/jack_nicklaus_villa.jpg"
+        image: "/halla_corp/images/portfolio/jack_nicklaus_villa.jpg"
     },
     {
         title: "현대자동차 제네시스 청주거점 구축공사",
@@ -129,7 +129,7 @@ export const portfolioProjects = [
             location: "충청북도 청주",
             period: "2023.07 ~ 2024.10"
         },
-        image: "/images/portfolio/genesis_cheongju.jpg"
+        image: "/halla_corp/images/portfolio/genesis_cheongju.jpg"
     },
     {
         title: "현대자동차 의왕연구소 차세대 배터리 연구동 신축공사",
@@ -141,7 +141,7 @@ export const portfolioProjects = [
             location: "경기 의왕",
             period: "2023.06 ~ 2024.08"
         },
-        image: "/images/portfolio/uiwang_research.png"
+        image: "/halla_corp/images/portfolio/uiwang_research.png"
     },
     {
         title: "ASML 화성 뉴캠퍼스 신축공사",
@@ -153,7 +153,7 @@ export const portfolioProjects = [
             location: "경기 화성",
             period: "2024.04 ~ 2025.01"
         },
-        image: "/images/portfolio/asml_hwaseong.png"
+        image: "/halla_corp/images/portfolio/asml_hwaseong.png"
     },
     {
         title: "오산 원동 물류센터 신축공사",
@@ -165,7 +165,7 @@ export const portfolioProjects = [
             location: "경기도 오산",
             period: "2022.05 ~ 2022.12"
         },
-        image: "/images/portfolio/osan_logistics.jpg"
+        image: "/halla_corp/images/portfolio/osan_logistics.jpg"
     },
     {
         title: "의정부 리듬시티 공동주택 공사",
@@ -177,7 +177,7 @@ export const portfolioProjects = [
             location: "경기도 의정부",
             period: "2023.02 ~ 2024.12"
         },
-        image: "/images/portfolio/uijeongbu_rhythm.jpg"
+        image: "/halla_corp/images/portfolio/uijeongbu_rhythm.jpg"
     },
     {
         title: "현대자동차 울산공장 신기숙사 신축공사",
@@ -189,7 +189,7 @@ export const portfolioProjects = [
             location: "울산광역시 북구",
             period: "2023.09 ~ 2024.05"
         },
-        image: "/images/portfolio/hyundai_ulsan_dorm.jpg"
+        image: "/halla_corp/images/portfolio/hyundai_ulsan_dorm.jpg"
     },
     {
         title: "충북 청주전시관 건립사업 건축공사",
@@ -201,7 +201,7 @@ export const portfolioProjects = [
             location: "충청북도 청주",
             period: "2024.01 ~ 2025.03"
         },
-        image: "/images/portfolio/cheongju_exhibition.jpg"
+        image: "/halla_corp/images/portfolio/cheongju_exhibition.jpg"
     },
     {
         title: "신한은행 압구정 갤러리아지점 재건축사업",
@@ -213,7 +213,7 @@ export const portfolioProjects = [
             location: "서울 강남구",
             period: "2024.04 ~ 2024.08"
         },
-        image: "/images/portfolio/shinhan_apgujeong.jpg"
+        image: "/halla_corp/images/portfolio/shinhan_apgujeong.jpg"
     },
     {
         title: "남산그린빌딩 증축 및 환경개선공사",
@@ -225,7 +225,7 @@ export const portfolioProjects = [
             location: "서울 중구",
             period: "2024.12 ~ 2025.04"
         },
-        image: "/images/portfolio/namsan_green.jpg"
+        image: "/halla_corp/images/portfolio/namsan_green.jpg"
     },
     {
         title: "제네시스 광주",
@@ -237,7 +237,7 @@ export const portfolioProjects = [
             location: "광주광역시",
             period: "2025.01 ~ 2025.11"
         },
-        image: "/images/portfolio/genesis_gwangju.jpg"
+        image: "/halla_corp/images/portfolio/genesis_gwangju.jpg"
     },
     {
         title: "GS타워 공연장 외부 파사드 리뉴얼공사",
@@ -249,7 +249,7 @@ export const portfolioProjects = [
             location: "서울 강남",
             period: "2024.11 ~ 2025.02"
         },
-        image: "/images/portfolio/gs_tower_facade.jpg"
+        image: "/halla_corp/images/portfolio/gs_tower_facade.jpg"
     },
     {
         title: "광양 포스코 홍보관 전시관",
@@ -261,6 +261,6 @@ export const portfolioProjects = [
             location: "전남 광양",
             period: "2023.12 ~ 2025.03"
         },
-        image: "/images/portfolio/gwangyang_posco_pr.png"
+        image: "/halla_corp/images/portfolio/gwangyang_posco_pr.png"
     }
 ];
