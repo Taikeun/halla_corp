@@ -77,7 +77,7 @@ export default function Products() {
               <div className="p-8 flex-1 flex flex-col">
                 <div className="mb-4">
                   <span className="text-laser-orange font-bold text-xs tracking-widest uppercase mb-2 block">
-                    Product 0{idx + 1}
+                    Product {(idx + 1).toString().padStart(2, '0')}
                   </span>
                   <h3 className="text-xl font-bold text-halla-navy mb-3 group-hover:text-laser-orange transition-colors">{product.title}</h3>
                   <p className="text-slate-600 text-sm leading-relaxed mb-6 line-clamp-3">
