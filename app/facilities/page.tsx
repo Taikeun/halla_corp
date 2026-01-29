@@ -1,6 +1,119 @@
+'use client';
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+interface Facility {
+    name: string;
+    images: string[];
+    desc: string;
+    specs: string[];
+}
+
+function FacilityCard({ fac }: { fac: Facility }) {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const nextImage = () => {
+        setCurrentImageIndex((prev) => (prev + 1) % fac.images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prev) => (prev - 1 + fac.images.length) % fac.images.length);
+    };
+
+    const goToImage = (index: number) => {
+        setCurrentImageIndex(index);
+    };
+
+    return (
+        <div className="group border border-slate-200 hover:border-laser-orange hover:shadow-xl transition-all duration-300 bg-white overflow-hidden flex flex-col">
+            {/* Image Section */}
+            <div className="relative h-64 w-full bg-slate-100 group-hover:bg-slate-50 transition-colors overflow-hidden">
+                {fac.images.length > 0 ? (
+                    <>
+                        <div
+                            className="flex h-full transition-transform duration-500 ease-in-out"
+                            style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+                        >
+                            {fac.images.map((img, imgIdx) => (
+                                <div key={imgIdx} className="relative w-full h-full flex-shrink-0">
+                                    <Image
+                                        src={img}
+                                        alt={`${fac.name} ${imgIdx + 1}`}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Navigation Controls (Only if multiple images) */}
+                        {fac.images.length > 1 && (
+                            <>
+                                {/* Arrows */}
+                                <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        prevImage();
+                                    }}
+                                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+                                >
+                                    <ChevronLeft size={24} />
+                                </button>
+                                <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        nextImage();
+                                    }}
+                                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+                                >
+                                    <ChevronRight size={24} />
+                                </button>
+
+                                {/* Pagination Dots */}
+                                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+                                    {fac.images.map((_, idx) => (
+                                        <button
+                                            key={idx}
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                goToImage(idx);
+                                            }}
+                                            className={`w-2 h-2 rounded-full transition-all duration-300 ${idx === currentImageIndex ? "bg-laser-orange w-4" : "bg-white/70 hover:bg-white"
+                                                }`}
+                                        />
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                    </>
+                ) : (
+                    <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200">
+                        No Image
+                    </div>
+                )}
+            </div>
+
+            <div className="p-8 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-halla-navy mb-3 group-hover:text-laser-orange transition-colors">{fac.name}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
+                    {fac.desc}
+                </p>
+                <div className="space-y-1 pt-4 border-t border-slate-100">
+                    {fac.specs.map((spec, sIdx) => (
+                        <p key={sIdx} className="text-xs font-bold text-slate-500 flex items-center gap-2">
+                            <span className="w-1 h-1 bg-laser-orange rounded-full"></span>
+                            {spec}
+                        </p>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
 
 export default function Facilities() {
     const facilities = [
@@ -74,53 +187,7 @@ export default function Facilities() {
             <section className="py-24">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {facilities.map((fac, idx) => (
-                        <div key={idx} className="group border border-slate-200 hover:border-laser-orange hover:shadow-xl transition-all duration-300 bg-white overflow-hidden flex flex-col">
-                            {/* Image Section */}
-                            <div className="relative h-64 w-full bg-slate-100 group-hover:bg-slate-50 transition-colors">
-                                {fac.images.length > 1 ? (
-                                    <div className="flex overflow-x-auto snap-x snap-mandatory h-full scrollbar-hide">
-                                        {fac.images.map((img, imgIdx) => (
-                                            <div key={imgIdx} className="relative w-full h-full flex-shrink-0 snap-center border-r border-white/20 last:border-0">
-                                                <Image
-                                                    src={img}
-                                                    alt={`${fac.name} ${imgIdx + 1}`}
-                                                    fill
-                                                    className="object-cover"
-                                                />
-                                            </div>
-                                        ))}
-                                    </div>
-                                ) : (
-                                    fac.images[0]?.endsWith('.png') || fac.images[0]?.endsWith('.jpg') ? (
-                                        <Image
-                                            src={fac.images[0]}
-                                            alt={fac.name}
-                                            fill
-                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
-                                    ) : (
-                                        <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-200">
-                                            No Image
-                                        </div>
-                                    )
-                                )}
-                            </div>
-
-                            <div className="p-8 flex-1 flex flex-col">
-                                <h3 className="text-xl font-bold text-halla-navy mb-3 group-hover:text-laser-orange transition-colors">{fac.name}</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
-                                    {fac.desc}
-                                </p>
-                                <div className="space-y-1 pt-4 border-t border-slate-100">
-                                    {fac.specs.map((spec, sIdx) => (
-                                        <p key={sIdx} className="text-xs font-bold text-slate-500 flex items-center gap-2">
-                                            <span className="w-1 h-1 bg-laser-orange rounded-full"></span>
-                                            {spec}
-                                        </p>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
+                        <FacilityCard key={idx} fac={fac} />
                     ))}
                 </div>
             </section>
