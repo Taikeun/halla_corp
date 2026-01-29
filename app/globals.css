@@ -6,13 +6,14 @@
   --color-clean-white: #ffffff;
   --color-light-steel: #f8fafc;
   --color-laser-orange: #f97316;
-  
+
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a; /* Halla Navy as text color for high contrast */
+  --foreground: #0f172a;
+  /* Halla Navy as text color for high contrast */
 }
 
 body {
