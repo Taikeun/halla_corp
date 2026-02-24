@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
@@ -88,36 +89,7 @@ export default function Contact() {
                     </div>
 
                     {/* Form */}
-                    <div className="bg-slate-50 p-8 md:p-12 border border-slate-100 shadow-lg">
-                        <h3 className="text-xl font-bold text-halla-navy mb-6">Online Inquiry</h3>
-                        <form className="space-y-6">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block text-sm font-bold text-slate-700 mb-2">Name</label>
-                                    <input type="text" className="w-full px-4 py-3 border border-slate-300 focus:border-halla-navy focus:outline-none transition-colors" placeholder="홍길동" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-slate-700 mb-2">Company</label>
-                                    <input type="text" className="w-full px-4 py-3 border border-slate-300 focus:border-halla-navy focus:outline-none transition-colors" placeholder="(주)회사명" />
-                                </div>
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Email</label>
-                                <input type="email" className="w-full px-4 py-3 border border-slate-300 focus:border-halla-navy focus:outline-none transition-colors" placeholder="example@email.com" />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Subject</label>
-                                <input type="text" className="w-full px-4 py-3 border border-slate-300 focus:border-halla-navy focus:outline-none transition-colors" placeholder="문의 제목을 입력해주세요" />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Message</label>
-                                <textarea className="w-full px-4 py-3 border border-slate-300 focus:border-halla-navy focus:outline-none transition-colors h-32 resize-none" placeholder="문의 내용을 입력해주세요"></textarea>
-                            </div>
-                            <button type="button" className="w-full bg-halla-navy text-white font-bold py-4 uppercase tracking-widest hover:bg-slate-800 transition-colors">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
+                    <ContactForm />
 
                 </div>
             </section>
