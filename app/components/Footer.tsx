@@ -10,20 +10,13 @@ export default function Footer() {
                 {/* Brand */}
                 <div>
                     <Link href="/" className="mb-6 inline-block">
-                        <div className="flex items-center gap-2">
-                            <div className="relative w-8 h-8 bg-white rounded-sm overflow-hidden flex items-center justify-center">
-                                <Image
-                                    src="/halla_corp/images/halla_logo.jpg"
-                                    alt="(주)한라"
-                                    width={32}
-                                    height={32}
-                                    className="object-contain"
-                                />
-                            </div>
-                            <span className="text-xl font-bold text-white tracking-tighter uppercase">
-                                (주) 한라
-                            </span>
-                        </div>
+                        <Image
+                            src="/halla_corp/images/halla_logo_white.png"
+                            alt="(주)한라"
+                            width={140}
+                            height={36}
+                            className="object-contain h-9 w-auto"
+                        />
                     </Link>
                     <p className="max-w-xs leading-relaxed mb-6">
                         고객의 가치를 실현하는 정밀 판금 및 레이저 용접 전문 기업.

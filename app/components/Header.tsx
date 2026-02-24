@@ -21,19 +21,14 @@ export default function Header() {
         <header className="sticky top-0 z-50 bg-halla-navy text-white shadow-lg">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <div className="relative w-10 h-10 bg-white rounded-sm overflow-hidden flex items-center justify-center">
-                        <Image
-                            src="/halla_corp/images/halla_logo.jpg"
-                            alt="(주)한라"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                        />
-                    </div>
-                    <span className="text-xl font-bold tracking-tighter uppercase group-hover:text-laser-orange transition-colors">
-                        (주) 한라
-                    </span>
+                <Link href="/" className="flex items-center group">
+                    <Image
+                        src="/halla_corp/images/halla_logo_white.png"
+                        alt="(주)한라"
+                        width={160}
+                        height={40}
+                        className="object-contain h-10 w-auto"
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
