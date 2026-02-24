@@ -83,6 +83,7 @@ export default function Contact() {
                                 marginHeight={0}
                                 marginWidth={0}
                                 src="https://maps.google.com/maps?q=경기도 김포시 대곶북로 422&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                sandbox="allow-scripts allow-same-origin"
                                 className="border-0 grayscale-[20%] hover:grayscale-0 transition-all duration-500"
                             ></iframe>
                         </div>
